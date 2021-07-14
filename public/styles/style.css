@@ -1,0 +1,133 @@
+
+/* ---------------------------
+------------HEADER------------
+----------------------------*/
+
+@import url(/styles/header.css);
+
+/* ---------------------------
+----------NEWSLETTER----------
+----------------------------*/
+
+@import url(/styles/newsletter.css);
+
+/* ---------------------------
+----------LIGHTSLIDER----------
+----------------------------*/
+@import url(/styles/lightslider.css);
+
+/* ---------------------------
+----------NAV CARRITO DROPDOWN----------
+----------------------------*/
+@import url(/styles/navCarritoDropdown.css);
+
+
+/* ---------------------------
+------------FOOTER------------
+----------------------------*/
+
+@import url(/styles/footer.css);
+
+/* ---------------------------
+--------TEMPLATE ADMIN--------
+----------------------------*/
+
+@import url(/styles/templateAdmin.css);
+@import url(/styles/productosAdmin.css);
+@import url(/styles/usuariosAdmin.css);
+
+
+/* ---------------------------
+-------ESTILOS DE VISTAS------
+----------------------------*/
+
+     /*-----HOME----*/
+
+     @import url(/styles/home.css);
+
+     /*-----NOSOTROS----*/
+
+     @import url(/styles/nosotros.css);
+     
+     /*-----PRODUCTOS----*/
+
+     @import url(/styles/detalleProducto.css);
+
+     /*-----CARRITO----*/
+
+     @import url(/styles/carrito.css);
+     
+     /*-----USUARIO----*/
+     @import url(/styles/register.css);
+     @import url(/styles/logIn.css);
+          
+     /*-----CREAR PRODUCTO----*/
+     @import url(/styles/crearProducto.css);
+
+     /*-----OVERVIEW Admin----*/
+     @import url(/styles/overview.css);
+
+
+/* ---------------------------
+----------GENERALES-----------
+----------------------------*/
+
+/*fuente MONTSERRAT: Usada para todo menos para productos*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/*fuente INTER: Usada para detalle de productos, precio... tanto en las cajas como en el carrito.*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&display=swap');
+
+/*fuente ROBOTO CONDENSED y RAJDHANI: Prueba.*/
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
+* {
+     box-sizing: border-box;
+     margin: 0px;
+     text-decoration: none;
+     padding: 0px;
+     font-family: /*'Rajdhani',*/'Roboto Condensed', 'Roboto', 'Segoe UI', Oxygen, Ubuntu, Cantarell,-apple-system,BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+     outline:none;
+     
+}
+
+*:focus{
+     outline-style: solid;
+     outline-width:1px;
+     outline-color: #f57c7c;
+}
+
+html{
+
+     overscroll-behavior-y: none;
+     position: fixed;
+     overflow: hidden;
+}
+body {
+     scroll-behavior: smooth;
+     overflow-y: scroll;
+     height: 100vh;
+     width: 100vw;
+}
+/*------------------------------
+--------------------------------
+MAIN - Template de vistas
+--------------------------------
+------------------------------*/
+
+
+
+body main.contenedor{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-items: center;
+     min-height: 90vh;
+     height: auto;
+     width: 100%;
+     color: #363636;
+     position: relative;
+}
+
+

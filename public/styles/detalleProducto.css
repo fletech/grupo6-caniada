@@ -1,0 +1,423 @@
+
+* .detalleProducto {
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+    padding: 0px;
+    font-family: 'Roboto Condensed', 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* a {
+    color: rgb(44, 44, 44);
+} 
+
+
+
+/*===========ESTRUCTURA PRINCIPAL===========*/
+
+body {
+    background-color: #fff;
+}
+
+main .detalleProducto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: auto;
+    width: 100%;
+}
+
+main.detalleProducto > div {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+main div.rutaProducto {
+    height: 3%;
+}
+
+main div.contenedorDetalle {
+    margin-right: 35px;
+    height: auto;
+    flex-direction: row;
+}
+
+main div.similaresProducto {
+    height: auto;
+}
+
+/*===========DIV RUTAPRODUCTO===========*/
+
+main div.rutaProducto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main div.rutaProducto ul li {
+    display: inline;
+}
+
+main div.rutaProducto ul li a {
+    text-decoration: none;
+    color: #B3ABBC;
+}
+
+/*===========DIV CONTENEDORDETALLES===========*/
+
+main div.panelIzquierdo {
+    width: 70%;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+}
+
+main div .panelDerecho {
+    margin-bottom: 90px;
+    position: sticky;
+    top: 0px;
+    width: 30%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main div.panelIzquierdo section.vidriera {
+    height: 60%;
+}
+
+main div.panelIzquierdo section.caracteristicasProducto {
+    height: auto;
+}
+
+/*===========SECTION VIDRIERA===========*/
+
+main div.panelIzquierdo section.vidriera div.imagenes {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+main div.panelIzquierdo section.vidriera div.imagenes div {
+    display: flex;
+    justify-content: center;
+    width: 42%;
+    height: 100%;
+}
+
+main div.panelIzquierdo section.vidriera div.imagenes div img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+main div.panelIzquierdo section.vidriera div.imagenes div.botonIzq {
+    width: 5%;
+    align-items: center;
+}
+
+main div.panelIzquierdo section.vidriera div.imagenes div.botonDer {
+    width: 5%;
+    align-items: center;
+}
+
+main div.panelIzquierdo section.vidriera div.imagenes button {
+    background: none;
+    border: 0;
+    color: inherit;
+}
+
+main div.panelIzquierdo section.vidriera div.imagenes button i {
+    font-size: 28px;
+}
+
+main div.panelIzquierdo section.vidriera div.imagenes button i:hover {
+    transform: scale(1.025);
+}
+
+/*===========SECTION CARACTERÍSTICAS===========*/
+
+main div.panelIzquierdo section.caracteristicasProducto {
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin: 35px;
+    padding: 15px;
+    top: 15px;
+    line-height: 1.8;
+    background-color: #f8f8f87f;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+main div.panelIzquierdo section.caracteristicasProducto div.opinionTalles {
+    display: flex;
+    flex-direction: column;
+}
+
+main div.panelIzquierdo section.caracteristicasProducto div.opinionTalles img {
+    align-self: center;
+    max-width: 60%;
+    max-height: 60%;
+}
+
+/*===========DIV PANEL DERECHO===========*/
+
+main div.panelDerecho {
+    justify-content: space-between;
+    padding: 25px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+ul>li {
+    list-style-type: none;
+    line-height: 1.8;
+}
+
+main div.panelDerecho h2 a i {
+    font-size: 22px;
+}
+
+main div.panelDerecho h2 a i:hover {
+    color: lightcoral
+}
+
+/*===========DIV COLORES PRODUCTOS===========*/
+
+main div.panelDerecho div.coloresProducto {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    ;
+}
+
+main div.panelDerecho div.coloresProducto div {
+    display: flex;
+    align-content: center;
+    height: auto;
+}
+
+main div.panelDerecho div.coloresProducto div img {
+    width: auto;
+}
+
+main div.panelDerecho div.coloresProducto button i {
+    font-size: 14px;
+}
+
+main div.panelDerecho div.coloresProducto button {
+    background: none;
+    border: 0;
+    color: inherit;
+    position: relative;
+    left: 15px;
+}
+
+/*===========DIV SELECCIÓN DE TALLES===========*/
+
+main div.panelDerecho div.seleccionTalles select {
+    border-radius: 0px;
+    border-right: black;
+    border-left: black;
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+}
+
+/*===========DIV BOTÓN AÑADIR===========*/
+
+main div.panelDerecho a.boton {
+    word-spacing: 10px;
+    border: none;
+    background: #fc5e5e;
+    color: inherit;
+    font-size: 18px;
+    border-radius: 30px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+
+main div.panelDerecho a.boton:hover {
+    cursor: pointer;
+}
+
+main div.panelDerecho a.boton i {
+    font-size: 18px;
+    color: white
+}
+
+main div.panelDerecho a.boton {
+    color: white;
+}
+
+/*===========DIV SIMILARES===========*/
+
+main div.similaresProducto {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+    margin-right: 15px;
+    margin-bottom: 35px;
+}
+
+main div.similaresProducto div.recomendaciones {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+
+main div.similaresProducto div.recomendaciones div {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    align-items: center;
+}
+
+main div.similaresProducto div.recomendaciones div:hover {
+    transform: scale(1.025);
+}
+
+main div.similaresProducto div.recomendaciones div img {
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+main div.similaresProducto div.recomendaciones button {
+    background: none;
+    border: none;
+    color: inherit;
+    position: relative;
+    left: 15px;
+}
+
+main div.similaresProducto div.recomendaciones button {
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+main div.similaresProducto div.recomendaciones div a:hover {
+    text-decoration: underline;
+}
+
+/*===========MEDIA QUERYS===========*/
+
+@media screen and (max-width: 750px) {
+    main div.contenedorDetalle {
+        flex-direction: column;
+        margin-right: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    main div.panelIzquierdo {
+        width: 100%;
+    }
+    main div.panelDerecho {
+        width: 105%;
+        height: auto;
+        position: sticky;
+        bottom: 0px;
+        background-color: white;
+        align-self: center;
+        margin-bottom: 0px;
+        padding: 18px;
+        padding-bottom: 22px;
+    }
+    main div.panelIzquierdo section.caracteristicasProducto {
+        width: 100%;
+        margin: 5px;
+        padding: 5px;
+        top: 0px;
+    }
+    main div.panelDerecho p.medios_de_pago {
+        display: none;
+    }
+    main div.panelDerecho h2 {
+        font-size: 1.17em;
+        align-self: stretch
+    }
+    main div.panelDerecho ul {
+        display: none;
+    }
+    main div.panelDerecho br {
+        display: none;
+    }
+    main div.panelIzquierdo section.vidriera div.imagenes {
+        align-items: center;
+        justify-content: space-between;
+    }
+    main div.panelIzquierdo section.vidriera div.imagenes div.img_secundaria {
+        display: none;
+    }
+    main div.panelIzquierdo section.vidriera div.imagenes div.img_principal {
+        width: 80%;
+        height: auto;
+        align-items: center;
+    }
+    main div.panelDerecho a.boton {
+        padding: 10px;
+    }
+    main div.similaresProducto {
+        margin-left: 10px;
+    }
+    main div.similaresProducto .recomendaciones .recom_3 {
+        display: none;
+    }
+    main div.similaresProducto .recomendaciones .recom_4 {
+        display: none;
+    }
+    main div.similaresProducto div.recomendaciones div {
+        height: fit-content;
+        width: 40%;
+    }
+    main div.panelIzquierdo section.vidriera {
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    main div.panelDerecho{
+        padding: 10px;
+        padding-bottom: 10px;
+    }
+
+    main div.panelDerecho h2 {
+        font-size: 1em;
+    }
+    main div.panelDerecho p {
+        font-size: .7em;
+    }
+    main div.panelDerecho a.boton {
+        padding: 5px;
+    }
+
+    main div.panelDerecho div.coloresProducto div img {
+        height: auto;
+        width: 77%;
+    }
+    main div.panelDerecho h2 a i {
+        display: none;
+    }
+
+    main div.panelDerecho div.coloresProducto {
+        justify-content: flex-start;
+    }
+
+
+}

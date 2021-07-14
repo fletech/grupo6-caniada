@@ -1,0 +1,128 @@
+section.productosAdmin{
+     width: 80%;
+     font-family: 'Inter'!important;
+}
+
+section.productosAdmin div.caja{
+     width: 100%;
+     margin-top: 250px;
+     border: solid 1px #cccbcb;
+     border-radius: 10px;
+     margin-bottom: 80px;
+}
+
+section div.caja ul div.row{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+}
+
+section div.caja ul div.row.contenedor-row-1{
+     padding: 5px 0px;
+     background-color: #363636;
+}
+section div.caja ul div.row div.column>p{
+     font-size: 12px;
+}
+
+section div.caja ul div.row.contenedor-row-1 div.col-precio,
+section div.caja ul div.row.contenedor-row-1 div.col-editar,
+section div.caja ul div.row.contenedor-row-1 div.col-eliminar{
+     display: flex;
+     justify-content: center;
+}
+
+section div.caja ul div.row.contenedor-row-1 div p{
+     font-size: 18px;
+     font-weight: bold;
+     color: #fafafa;
+     ;
+}
+
+section.productosAdmin div.caja {
+     overflow: visible;
+}
+
+section div.caja ul div.row div.column{
+     width: 15%;
+     padding: 0px 5px;
+}
+
+section div.caja ul li div.row div.col-imagen {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+section div.caja ul li div.row div.col-imagen div.contenedor-imagen{
+     max-height: 40px;
+}
+
+
+section div.caja ul li div.row div.col-imagen div.contenedor-imagen img{
+     width: 40px;
+     object-fit: cover;
+}
+
+
+section div.caja ul div.row div.col-nombre{
+     width: 30%;
+
+}
+section div.caja ul div.row div.col-descripcion{
+     width: 25%;
+}
+
+section.productosAdmin div.caja ul li {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     padding: 5px 0px;
+}
+section.productosAdmin div.caja ul li p{
+     width: 60%;
+}
+
+
+
+section.productosAdmin div.caja ul li div.row div.col-precio,
+section.productosAdmin div.caja ul li div.row div.col-eliminar,
+section.productosAdmin div.caja ul li div.row div.col-editar{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+
+section.productosAdmin div.caja ul li div.row div.col-editar:hover a{
+     color: #f2f2f2;
+     background-color:  dodgerblue;
+     border-radius: 50%;
+     width: 30px;
+     height: 30px;
+     transition: background-color 0.4s ease;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+section.productosAdmin div.caja ul li div.row div.col-eliminar form button{
+     background: none;
+     border: none;
+     cursor: pointer;
+}
+
+section.productosAdmin div.caja ul li div.row div.col-eliminar:hover form button  i{
+     font-weight: bold;
+     font-size: 16px;
+     color: rgb(231, 228, 227);
+     background-color:  #e92828;
+     border-radius: 50%;
+     width: 30px;
+     height: 30px;
+     transition: background-color 0.3s ease;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}

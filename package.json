@@ -1,0 +1,44 @@
+{
+  "name": "CaniadaDesign",
+  "version": "1.0.0",
+  "description": "Caniada Designs es un e-commerce de indumentaria casual. Su target son hombres y mujeres de 18 a 35 años ubicados en Argentina.",
+  "main": "./src/app.js",
+  "scripts": {
+    "client-install": "cd client && npm install",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon ./src/app.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "node ./src/app.js && npm install && npm start",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NelsonLoto/grupo_6_caniadaDesigns.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NelsonLoto/grupo_6_caniadaDesigns/issues"
+  },
+  "homepage": "https://github.com/NelsonLoto/grupo_6_caniadaDesigns#readme",
+  "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^6.0.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.8.0",
+    "method-override": "^3.0.0",
+    "multer": "^1.4.2",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5",
+    "sequelize-cli": "^6.2.0",
+    "start": "^5.1.0"
+  }
+}

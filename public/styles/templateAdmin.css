@@ -1,0 +1,296 @@
+body#admin {
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-end;
+     font-family: 'Rajdhani','Roboto Condensed', 'Roboto', 'Segoe UI', Oxygen, Ubuntu, Cantarell,-apple-system,BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+     outline:none;
+}
+body section.panelAdmin{
+     width: 13%;
+     height: 100vh;
+     background-color: #333;
+     position: fixed;
+     left: 0px;
+     padding: 0px 10px;
+     padding-bottom: 15px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     color: #e9e9e9;
+     z-index: 3;
+}
+
+body section.panelAdmin div.top{
+     justify-self: flex-start;
+     display: flex;
+     justify-content: center;
+     padding-top: 10px;
+
+}
+body section.panelAdmin div.top a{
+     display: flex;
+     justify-content: center;
+
+}
+body section.panelAdmin div.top img{
+     width: 80%;
+}
+body section.panelAdmin nav{
+     flex-grow: 1;
+     margin: 20px 0px;
+     padding: 20px 0px;
+     border-top: solid 1px #474747;
+     border-bottom: solid 1px #474747;
+}
+
+body section.panelAdmin nav ul{
+     margin-top: 10px;
+}
+body section.panelAdmin nav ul li{
+}
+
+body section.panelAdmin nav ul li a{
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+     color: #e9e9e9;
+     width: 100%;
+     font-size: 14px;
+}
+body section.panelAdmin nav ul li a i{
+     font-size: 13px;
+     margin-right: 10px;
+     width: 10%;
+}
+
+body section.panelAdmin div.footer{
+     display: flex;
+     width: 100%;
+     flex-direction: column;
+     font-size: 12px;
+}
+
+body section.panelAdmin div.footer p,
+body section.panelAdmin div.footer p i{
+     padding-top: 10px;
+}
+body section.panelAdmin div.footer a{
+     color: #e9e9e9;
+     font-size: 16px;    
+}
+
+
+
+
+
+body main.mainAdmin{
+     width: 87%;
+     min-height: 100vh;
+     height: 110vh;
+     display: flex;
+     flex-direction: column;
+     position: relative;
+}
+
+body main.mainAdmin header.adminHeader{
+     position: fixed;
+     align-items: center;
+     height: 40px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     padding: 0px 30px;
+     background-color: #474747;
+     width: 87%;
+     z-index: 2
+}
+
+body main.mainAdmin header.adminHeader p a{
+     color: #e9e9e9;
+}
+
+body main.mainAdmin header.adminHeader div { 
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+}
+body main.mainAdmin header.adminHeader div a{
+     color: #e9e9e9;
+     margin-left: 15px;
+     font-size:20px ;
+}
+
+body main.mainAdmin header.adminHeader div  a img{
+     width: 20px;
+}
+
+
+
+body main.mainAdmin section.cargar.contenedor{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-items: center;
+     height: 100vh;
+     width: 100%;
+     color: #363636;
+     position: relative;
+}
+
+
+
+
+
+
+
+header.adminHeader nav.user{
+     display: flex;
+     height: 100%;
+     align-items: center;
+     justify-content: flex-end;
+     width: 50%;
+ }
+ 
+ header.adminHeader nav.user ul li.info,
+ header.adminHeader nav.user ul li.inbox{
+     position: relative;
+     padding: 0px 0px;
+ }
+ 
+ header.adminHeader nav.user ul li span.notificacion{
+     width: 16px;
+     line-height: 16px;
+     background-color: tomato;
+     z-index: 2;
+     position: absolute;
+     right: -12px;
+     top:0px;
+     color:white;
+     border-radius: 10px;
+     text-align: center;
+     font-weight: bold;
+     font-size: 12px;
+     font-family: 'Inter', Arial, Helvetica, sans-serif;
+     box-shadow: -6px 4px 15px rgb(223, 75, 75);
+     cursor: pointer;
+ }
+ 
+ header.adminHeader nav.user ul{
+     color: #363636;
+     display: flex;
+     height: 100%;
+     align-items: center;
+     justify-content: flex-end;
+     margin-right: 2vw;
+ }
+ 
+ header.adminHeader nav.user ul li {
+     margin-left: 50px;
+     font-size: 1.1rem;
+     color: #fafafa;
+ 
+ }
+ 
+ header.adminHeader nav.user ul li a:hover {
+     transition: all ease-out 0.1s;
+     
+ }
+ 
+ header.adminHeader nav.menu ul li a:hover {
+     transition: all ease-out 0.1s;
+     /*color: rgb(248, 233, 222);*/
+     
+ }
+ 
+ header.adminHeader nav.user ul li a{
+     color: #fafafa;
+ }
+ 
+ header.adminHeader nav.user ul.userMenu li.usuario{
+     position: relative;
+     width: 30px;
+ }
+ header.adminHeader nav.user ul.userMenu li.user{
+     padding: 20px 0px;
+ }
+ header.adminHeader nav.user ul li.usuario div.perfil {
+     cursor: pointer;
+     position: relative;
+ }
+ header.adminHeader nav.user ul li.usuario div.perfil div.avatar{
+     width:30px;
+     height: 30px;
+ }
+ header.adminHeader nav.user ul li.usuario div.perfil div.avatar img{
+     object-fit: cover;
+     width: 100%;
+     height: 100%;
+     border-radius: 20px;
+     border: solid 1px#a7a6a6;
+ }
+ 
+ header.adminHeader nav.user ul.userMenu li.usuario div.flecha{
+     position: absolute;
+     top:15%;
+     right: -25px;
+     cursor: pointer;
+     height: 60%;
+     width: 40px;
+     text-align: right;
+     color: #f3c3c3;
+ }
+ header.adminHeader nav.user ul.userMenu li.usuario div.flecha i{ 
+     font-size: 12px;
+     color: #f09292;
+ }
+ 
+ header.adminHeader nav.user ul.userMenu li.usuario div.dropdown{
+     font-size: 0.8rem;
+     display: none;
+     position: absolute;
+     top:30px;
+     left: -70px;
+     width: 150px;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: space-between;
+     background-color: #474747;
+     border-bottom-right-radius: 8px;
+     border-bottom-left-radius: 8px;
+     padding: 8px 0px;
+
+ }
+ header.adminHeader nav.user ul.userMenu li.usuario div.dropdown div.dropdown-option{
+     padding: 1px 5px;
+     margin: 3px 0px;
+     width: 100%;
+     cursor: pointer;
+ }
+ header.adminHeader nav.user ul.userMenu li.usuario div.dropdown div.dropdown-option a{
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     width: 100%;
+ }
+ 
+ header.adminHeader nav.user ul.userMenu li.usuario div.dropdown div.dropdown-option a i{
+      font-size: 12px ;
+     text-align: left;
+     color: #f56c6c;
+     width: 15%
+ }
+ 
+ header.adminHeader nav.user ul.userMenu li.usuario div.dropdown div.dropdown-option p{
+      font-size: 12px;
+     margin-left: 10px;
+ }
+ 
+ 
+ 
+ 
+ header.adminHeader nav.user ul.userMenu li.usuario:hover div.dropdown,
+ header.adminHeader nav.user ul.userMenu li.usuario div.flecha:focus a:focus + div.dropdown{
+     display: flex;
+     z-index: 1;
+ }

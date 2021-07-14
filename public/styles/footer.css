@@ -1,0 +1,257 @@
+
+footer {
+     /*box-shadow: -1px -1px 4px #a7a5a5;*/
+     border-top: solid 0.2px #d8d6d6;
+     background-color: rgb(250, 250, 250);
+}
+
+/* Footer superior */
+footer .fila1 {
+     display: flex;
+     justify-content: space-between;
+     margin: 0px 50px;
+     border-bottom: solid 1px #908f8f;
+     padding: 20px 50px;
+     flex-wrap: wrap;
+     height: auto;
+}
+
+footer .fila1 div.logo{
+     height: auto;
+     max-width: 200px;
+}
+
+footer .fila1 img.logo {
+     width: 70%;
+     min-width: 100px;
+
+}
+
+.fila1 div.menu {
+     display: flex;
+     flex-wrap: wrap;
+     flex-grow: 1;
+     justify-content: flex-start;
+     padding-left: 10%;
+}
+.fila1:nth-child(3){
+     margin-left: 50px;
+}
+
+.fila1 div.menu > div{
+     display: flex;
+     flex-direction: column;
+}
+footer .fila1 div.menu div ul>li{
+     line-height: 1.3;
+}
+
+footer .fila1 .menu h4 {
+     margin: 10px 0px 10px 0px;
+}
+footer .fila1 .menu ul {
+     list-style-type: none;
+}
+footer .fila1 .menu ul li {
+     margin-top: 10px;
+}
+footer .fila1 .menu ul li a{
+     color: #363636
+}
+
+
+.fila1 div.usuario {
+
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+.fila1 div.usuario a{
+     margin-bottom: 20px;
+     padding: 10px 20px;
+     width: 160px;
+     border: solid 1px #fc5e5e;
+     border-radius: 20px;
+     text-align: center;
+     font-size: 15px;
+}
+.fila1 div.usuario a.registro{
+     background-color: #fc5e5e;
+     color: white;
+}
+
+.fila1 div.usuario a.logIn{
+     background-color: white;
+     color: #363636;
+}
+
+
+
+/* Footer inferior */
+
+footer .fila2 {
+     display: flex;
+     width: 100%;
+     justify-content: space-between;
+     align-items: center;
+     padding: 15px 100px;
+     
+}
+footer .fila2 > div {
+     width: 33.3%;
+}
+footer .fila2 h4{
+     margin: 0px;
+}
+footer .fila2 .redes{
+     margin: 0px;
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+}
+footer .fila2 p{
+     text-emphasis: none;
+     text-align: center;
+}
+footer .fila2 .redes a i{
+     color: #fc5e5e;
+     font-size: 25px;
+     text-align: right;
+}
+
+
+@media screen and (max-width: 1024px){
+
+     .fila1  {
+          justify-content: space-between;
+          flex-wrap: nowrap;;
+     }
+     footer .fila1 img.logo {
+          margin:0px 10px;
+     }
+     footer .fila1 div.menu {
+          display: flex;
+          flex-wrap: wrap;
+          margin: 0px;
+          padding-left:5%;
+          justify-content: center;
+     }
+
+     
+
+     footer .fila1 div.menu div.colecciones{
+          display: none;
+     }
+     footer .fila1 div.usuario {
+          margin:0px 10px;
+     }
+}
+
+@media screen and (max-width: 700px){
+
+     footer .fila1  {
+          display: flex;
+          flex-wrap: nowrap;
+          flex-direction: column;
+          align-items: center;
+          padding: 20px 0px 0px;
+          margin: 10px 10px
+     
+     }
+     footer .fila1 div.logo{
+          height: auto;
+          margin:0px 0px;
+          display: flex;
+          justify-content: center;
+
+     }
+     footer .fila1 img.logo {
+          margin:0px 0px;
+     }
+     footer .fila1 div.menu {
+          display: flex;
+          flex-wrap: wrap;
+          order: 1;
+          flex-direction: column;
+          justify-self: center;
+          align-content: center;
+          width: 100%;
+          margin-top: 20px;
+          padding: 0;
+     }
+
+
+     footer .fila1 div.menu > div{
+          display: flex;
+          padding: 0px;
+          width: 100%;
+          text-align: center;
+     }
+
+
+     footer .fila1 div.menu h4{
+          margin: 5px 0px;
+          flex-wrap: nowrap;
+     }
+
+     footer .fila1 div.menu .nav ul{
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 5px;
+     }
+
+     footer .fila1 div.menu .colecciones{
+          display: none;
+     }
+
+   
+     footer .fila1 div.menu ul>li{
+          margin: 0px 5px
+     }
+
+     footer .fila1 div.usuario {
+          order: 0;
+          margin:20px 0px 0px 0px;
+          flex-direction: row;
+          justify-content: center;
+          flex-wrap: wrap;
+     }
+
+     .fila1 div.usuario a{
+          margin: 10px 10px;
+          width: 160px;
+          border: solid 1px #fc5e5e;
+          border-radius: 20px;
+          text-align: center;
+          font-size: 15px;
+     }
+
+
+     footer .fila2{
+          flex-direction: column;
+          padding: 10px;
+     }
+
+     footer .fila2 > div{
+          width: 100%
+     }
+
+     footer .fila2 h4{
+          order: 0;
+          text-align: center;
+     }
+     footer .fila2 .redes{
+          margin:10px;
+          justify-content: center;
+     }
+     footer .fila2 .redes p{
+          padding: 0px;
+     }
+}
+
+
+@media screen and (max-width: 450px){
+
+    
+}

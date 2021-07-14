@@ -1,0 +1,46 @@
+div.contenedor-cajas{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 100%;
+}
+
+div.contenedor-cajas div.caja{
+     width: 45%;
+     height: 400px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+} 
+
+div.contenedor-cajas div.caja:hover{
+     box-shadow: 1px 1px 6px #363636;
+} 
+
+div.contenedor-cajas div.caja:hover i{
+     color: rgb(127, 130, 133);
+}
+
+
+div.contenedor-cajas div.caja i{
+     font-size: 100px;
+     color:lightslategray;
+}
+
+div.contenedor-cajas div.caja a{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 150px;
+     height: 40px;
+     border-radius: 20px;
+     background-color: dodgerblue;
+     margin-top: 40px;
+     color: floralwhite;
+}
+div.contenedor-cajas div.caja a:hover{
+     box-shadow: 1px 1px 6px #363636;
+}
+
+

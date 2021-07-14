@@ -1,0 +1,93 @@
+body main section.newsletterContenedor{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 40px 0px;
+     width: 100%;
+     height: 40vh;
+}
+body main section.newsletterContenedor .parallax{
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-image: url('/images/home-imgs/huellaback.jpg');
+     background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body main div.newsletter{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 70%;
+     height: 80%;
+     background-color: rgb(255, 255, 255);
+}
+
+body main div.newsletter .form{
+     width: 40%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+body main div.newsletter .form form{
+     display: flex;
+     justify-content: space-between;
+}
+
+body main div.newsletter .form .titulo,
+body main div.newsletter .form form{
+     width: 100%;
+     margin: 10px 0px;;
+     text-align: left;
+}
+
+
+body main div.newsletter .form form div.input{
+     width: 80%;
+     position: relative;
+     height: 50px;
+}
+
+body main div.newsletter .form form div.input label{
+     width: 100%;
+     height: 100%;
+     line-height: 100%;
+     margin: 0 auto;
+     text-align: left;
+     position: absolute;
+     top:0;
+     left: 0;
+     z-index: 2;
+}
+
+body main div.newsletter .form form div.input input{
+     border: none;
+     width: 100%;
+     height: 100%;
+     border-bottom: solid 1px black;
+     outline: none;
+     line-height: 50px
+}
+
+body main div.newsletter .form form div.submit{
+     border: none;
+     width: 20%;
+
+}
+
+body main div.newsletter .form form div.submit button {
+     width: 100%;
+     height: 100%;
+}
+
+
+
+
+

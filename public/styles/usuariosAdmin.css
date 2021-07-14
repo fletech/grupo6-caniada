@@ -1,0 +1,27 @@
+section.usuariosAdmin{
+}
+
+section.usuariosAdmin div.caja {
+     width: 800px;
+     overflow: visible;
+     
+}
+
+section.usuariosAdmin div.caja ul li {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     padding: 5px 0px;
+}
+section.usuariosAdmin div.caja ul li p{
+     width: 33.3%;
+     font-size: 14px;
+     color: #363636;
+}
+
+section.usuariosAdmin div.caja ul li div.accion {
+     width: 40%;
+     display: flex;
+     justify-content: space-between;
+}
+
